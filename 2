@@ -1,26 +1,12 @@
 import UIKit
 
-let grade =  72
+var grade = 95
 
-if(grade >= 90){
 
-    print("Excellent")
-}
-
-else if (grade >= 80){
-    
-    print("Very Good")
-}
-
-else if(grade >= 70){
-    
-    print("Good")
-}
-else if(grade >= 60){
-    
-    print("Pass")
-}
-else if(grade < 60){
-    
-    print("Fail")
+switch grade {
+    case 90...100 : print("Excellent")
+    case 80...89 : print("Very Good")
+    case 70...79 : print("Good")
+    case 60...69 : print("Pass")
+    default : print("Fail")
 }
