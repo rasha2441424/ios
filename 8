@@ -1,0 +1,26 @@
+//First way to declare array
+//var numbers = [1,2,3,4,5,6,7,8,9,10]
+//Second way to declare array
+var numbers: [Int] = Array(1...10)
+//First way
+var Good: Array<Int> = []
+var Rasha: Array<Int> = []
+var i = 1
+while (i <= numbers.count) {
+    if (i % 2 == 0){
+        Rasha.append(i)
+    } else {
+        Good.append(i)
+    }
+    i += 1
+}
+print("Rasha numbers are: \(Rasha)")
+print("Good numbers are: \(Good)")
+//Second way
+for number in numbers {
+    if (number % 2 == 0){
+        print("\(number) is rasha number")
+    } else {
+        print("\(number) is good number")
+    }
+}
